@@ -1,0 +1,17 @@
+{
+  "name": "blank-3d-game",
+  "version": "1.0.0",
+  "description": "A blank 3D sandbox browser game starter built with Three.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^r128"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

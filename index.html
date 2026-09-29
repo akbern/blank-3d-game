@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Sandbox Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100vh;
+        }
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        #controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <div>3D Sandbox Game</div>
+        <div id="fps">FPS: 0</div>
+        <div id="blocks">Blocks: 0</div>
+    </div>
+    <div id="controls">
+        <strong>Controls:</strong><br>
+        WASD - Move<br>
+        Space - Jump / Fly Up<br>
+        Shift - Fly Down<br>
+        Left Click - Place Block<br>
+        Right Click - Remove Block<br>
+        Scroll - Change Block Type<br>
+        C - Toggle Fly Mode
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
